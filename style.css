@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+  --pink: #e84597;
+  --dark-grey: #1e1e1e;
+  --font1: 'VT323';
+  --font2: 'Press Start 2P';
+  --font3: 'Libre Caslon';
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/background/fondoiconos2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.mute-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mute-button:hover {
+  opacity: 0.7;
+}
+
+.mute-sound-button {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.mute-sound-button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  body::before {
+    background-image: url('./assets/background/fondoiconos4.png');
+  }
+  .mute-button {
+    font-size: 18px;
+  }
+  .mute-sound-button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .mute-button {
+    font-size: 18px;
+    
+  }
+  .mute-sound-button {
+    font-size: 18px;
+    
+  }
+}

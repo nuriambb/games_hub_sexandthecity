@@ -1,0 +1,163 @@
+:root {
+  --pink: #e84597;
+  --dark-grey: #1e1e1e;
+  --blue: #3f5fa8;
+  --yellow: #fdf9a9;
+  --yellow2: #fff649;
+  --font1: 'VT323';
+  --font2: 'Press Start 2P';
+  --font3: 'Libre Caslon';
+}
+.container-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-text3 {
+  margin-left: 10px;
+  padding: 5px;
+  width: 50%;
+}
+.h3-samantha {
+  font-family: var(--font1);
+  width: 100%;
+  text-align: start;
+  font-size: 100%;
+  color: white;
+  font-weight: 400;
+}
+.score-snake-div {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  width: 50%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.h4-score-snake,
+.h4-time-snake {
+  font-family: var(--font1);
+
+  text-align: center;
+
+  font-size: 100%;
+  color: white;
+  font-weight: 400;
+}
+.container-board-3 {
+  border-style: groove;
+  border-color: var(--blue);
+  border-width: 10px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 60vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0;
+}
+.grid {
+  width: 6vw;
+  height: 5vh;
+  position: relative;
+  box-sizing: border-box;
+}
+#snake {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow2);
+  box-shadow: -4px 7px 70px -11px rgba(227, 151, 0, 1);
+}
+#apple {
+  border-radius: 5px;
+  background-color: #3f5fa8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#apple > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#snake > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.buttonplay3 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.pause,
+.play {
+  width: 50px;
+  height: 50px;
+}
+
+.controls-container {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 10px;
+}
+
+.control-button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.control-button:active {
+  background-color: #ccc;
+}
+
+@media (min-width: 900px) {
+  .controls-container {
+    display: none;
+  }
+}
+@media (min-width: 1100px) {
+  .h3-samantha {
+    font-size: 2vw;
+  }
+  .score-snake-div > h4 {
+    font-size: 2vw;
+  }
+  .buttonplay3 > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .div-presentation {
+    gap: 10px;
+  }
+  .h3-samantha {
+    font-size: 1rem;
+  }
+  .score-snake-div > h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 795px) {
+  .h3-samantha {
+    font-size: 1.2rem;
+  }
+}
