@@ -69,13 +69,13 @@
 
 .mark-x {
   background-position: 50%;
-  background-image: url('./assets/mirandagame/chocopixel2.png');
+  background-image: url('../assets/mirandagame/chocopixel2.png');
   background-size: 70% 70%;
   background-repeat: no-repeat;
 }
 .mark-o {
   background-position: 50%;
-  background-image: url('./assets/mirandagame/tlfpixel2.png');
+  background-image: url('../assets/mirandagame/tlfpixel2.png');
   background-size: 70% 70%;
   background-repeat: no-repeat;
 }

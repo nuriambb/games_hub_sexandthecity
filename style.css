@@ -57,7 +57,7 @@ body::before {
 
 @media (max-width: 700px) {
   body::before {
-    background-image: url('./assets/background/fondoiconos4.png');
+    background-image: url('../assets/background/fondoiconos4.png');
   }
   .mute-button {
     font-size: 18px;
@@ -69,10 +69,8 @@ body::before {
 @media (max-width: 480px) {
   .mute-button {
     font-size: 18px;
-    
   }
   .mute-sound-button {
     font-size: 18px;
-    
   }
 }
