@@ -20,7 +20,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('./assets/background/fondoiconos2.png');
+  background-image: url('../assets/background/fondoiconos2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
